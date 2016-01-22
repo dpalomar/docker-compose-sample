@@ -8,8 +8,8 @@ apache:
 tomcatapp1:
   image: tomcat
   volumes:
-   - scripts/server01.xml:/usr/local/tomcat/config/server.xml
+   - ./scripts/server01.xml:/usr/local/tomcat/config/server.xml
 tomcatapp2:
   image: tomcat
   volumes:
-   - scripts/server01.xml:/usr/local/tomcat/config/server.xml
+   - ./scripts/server02.xml:/usr/local/tomcat/config/server.xml
