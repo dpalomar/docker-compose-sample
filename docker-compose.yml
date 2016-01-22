@@ -1,0 +1,15 @@
+apache:
+  build: .
+  links:
+   - tomcatapp1:tomcatapp1
+   - tomcatapp2:tomcatapp2
+  ports:
+   - "80:80"
+tomcatapp1:
+  image: tomcat
+  volumes:
+   - scripts/server01.xml:/usr/local/tomcat/config/server.xml
+tomcatapp2:
+  image: tomcat
+  volumes:
+   - scripts/server01.xml:/usr/local/tomcat/config/server.xml
