@@ -21,9 +21,9 @@ will show that tomcat is responding
 
 ## Useful commands
 
-`docker-compose stop` will stop all containers
-`docker-compose start` will start the containers again
-`docker-compose down` will stop and remove all containers (with flag `--rmi all` also it will delete images).
+- `docker-compose stop` will stop all containers
+- `docker-compose start` will start the containers again
+- `docker-compose down` will stop and remove all containers (with flag `--rmi all` also it will delete images).
 
 ## Tips
 
